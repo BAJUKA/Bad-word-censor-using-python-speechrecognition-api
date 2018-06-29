@@ -12,21 +12,6 @@ for word in data:
 check = 1
 
 r  = sr.Recognizer()
-
-
-
-#Uncomment the following code if you to choose which microphone you want to use
-
-'''#enter your mike name here
-mic_name = " "
-#generate a list of all audio cards/microphones
-mic_list = sr.Microphone.list_microphone_names()
- 
-#the following loop aims to set the device ID of the mic that we specifically want to use to avoid ambiguity.
-for i, microphone_name in enumerate(mic_list):
-    if microphone_name == mic_name:
-        device_id = i'''
-
 mic = sr.Microphone()
 
 
