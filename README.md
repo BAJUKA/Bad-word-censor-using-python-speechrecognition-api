@@ -2,7 +2,7 @@
 
 I wrote this short piece of code to explain the important and basic bits of speech recognition api of python.<br><br>
 To install this api:<br>
-1.pip install speechrecognition<br>
+1.pip install SpeechRecognition<br>
 2.pip install pyaudio<br>
 
 All this code does is takes a sentence (voice) as input and converts it into text and censors the inappropriate or "bad words".
