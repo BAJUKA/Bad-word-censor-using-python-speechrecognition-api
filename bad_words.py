@@ -11,8 +11,8 @@ for word in data:
 
 check = 1
 
-r  = sr.Recognizer()
-mic = sr.Microphone()
+r  = sr.Recognizer() #creating the object of recognizer class which you will to listen and interpret the audio
+mic = sr.Microphone() #creating an object for for microphone class, ou can specify additional parameters like chunk size etc..in this
 
 
 while(check):
@@ -22,10 +22,10 @@ while(check):
 		audio = r.listen(source) # listens to the source
 
 	try:
-		speech = r.recognize_google(audio) # converts the suidio to speech
+		speech = r.recognize_google(audio) # converts the audio to speech
 		final_sentence = ""
 		words = word_tokenize(speech) # using word tokenizer in nltk to parse the sentence
-		# if a bad word is found it changes it to sensered form
+		# if a bad word is found it changes it to censered form
 		for word in words:
 			if word.lower() not in bad_words and word.lower() + "s" not in bad_words:
 				final_sentence = final_sentence + word +" "
