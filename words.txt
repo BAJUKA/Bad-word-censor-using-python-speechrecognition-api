@@ -47,5 +47,8 @@ raand
 rand
 randi
 chod
+jhaatu
+laude
+
 
 
