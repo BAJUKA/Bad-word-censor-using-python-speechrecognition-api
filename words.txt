@@ -47,5 +47,7 @@ raand
 rand
 randi
 chod
+hoe
+lodu
 
 
